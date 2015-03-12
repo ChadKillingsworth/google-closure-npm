@@ -1,0 +1,9 @@
+[submodule "closure-compiler"]
+	path = closure-compiler
+	url = git@github.com:google/closure-compiler.git
+[submodule "closure-library"]
+	path = closure-library
+	url = git@github.com:google/closure-library.git
+[submodule "closure-templates"]
+	path = closure-templates
+	url = git@github.com:google/closure-templates.git
