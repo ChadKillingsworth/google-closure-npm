@@ -2,6 +2,11 @@
 
 This project is to facilitate building and packaging Google Closure Tools via NPM.
 
+## Requirements
+This package assumes that build tools (such as Maven) are installed and available on the path.
+
+While the project uses NPM, Node and Grunt to automate the build steps, it mainly uses shell tasks and as such doesn't download the dependencies for building each project.
+
 ## Usage
 
 ### Compiler
