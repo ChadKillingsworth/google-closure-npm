@@ -1,15 +1,18 @@
 {
   "name": "google-closure-npm",
+  "description": "Package to facilitate building closure-tools for publication via NPM",
   "private": true,
-  "version": "20150126.0.0",
-  "description": "Project to build and publish the closure tools suite to npm",
-  "author": "The Closure Compiler Authors",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ChadKillingsworth/closure-npm.git"
+  },
+  "author": "Chad Killingsworth",
   "license": "Apache-2.0",
   "dependencies": {
-    "grunt": "~0.4.0",
+    "grunt": "^0.4.5",
     "grunt-contrib-clean": "^0.6.0",
     "grunt-contrib-copy": "^0.8.0",
     "grunt-shell": "^1.1.2",
-    "grunt-string-replace": "^1.0.0"
+    "grunt-usage": "^1.1.0"
   }
 }
