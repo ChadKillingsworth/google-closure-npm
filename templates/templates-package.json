@@ -1,5 +1,5 @@
 {
-  "name": "closure-templates",
+  "name": "google-closure-templates",
   "version": "VERSION_NUMBER",
   "keywords": [
     "javascript",
@@ -14,6 +14,7 @@
     "type": "git",
     "url": "https://github.com/google/closure-templates.git"
   },
+  "author": "Google, Inc.",
   "license": "Apache-2.0",
   "bugs": {
     "url": "https://github.com/google/closure-templates/issues"

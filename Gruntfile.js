@@ -81,6 +81,12 @@ module.exports = function (grunt) {
           {
             expand: true,
             cwd: 'closure-templates/target',
+            src: ['soyutils_usegoog.js'],
+            dest: 'packages/google-closure-templates/javascript/'
+          },
+          {
+            expand: true,
+            cwd: 'closure-templates/target',
             src: 'soy-*-SNAPSHOT-with-dependencies.jar',
             dest: 'packages/google-closure-templates/java/',
             rename: function(orig) {
