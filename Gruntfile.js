@@ -64,12 +64,9 @@ module.exports = function (grunt) {
           },
           {
             expand: true,
-            cwd: 'closure-compiler/target',
-            src: 'closure-compiler-*-SNAPSHOT.jar',
-            dest: 'packages/google-closure-compiler',
-            rename: function(orig) {
-              return orig + '/compiler.jar';
-            }
+            cwd: 'closure-compiler/build',
+            src: 'compiler.jar',
+            dest: 'packages/google-closure-compiler/'
           }
         ]
       },
@@ -127,8 +124,8 @@ module.exports = function (grunt) {
       }
     },
     shell: {
-      'maven-compiler': {
-        command: 'mvn clean package',
+      'ant-compiler': {
+        command: 'ant clean jar',
         options: {
           execOptions: {
             cwd: 'closure-compiler'
@@ -185,7 +182,7 @@ module.exports = function (grunt) {
 
   grunt.registerTask('default', ['usage']);
 
-  grunt.registerTask('compiler', ['ensure-version-specified', 'clean:compiler', 'shell:git-submodule-tags', 'shell:maven-compiler',
+  grunt.registerTask('compiler', ['ensure-version-specified', 'clean:compiler', 'shell:git-submodule-tags', 'shell:ant-compiler',
       'copy:compiler', 'write-package-json:compiler']);
 
   grunt.registerTask('templates', ['ensure-version-specified', 'clean:templates', 'shell:maven-templates',
