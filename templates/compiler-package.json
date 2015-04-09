@@ -13,6 +13,7 @@
     "minifier",
     "closure"
   ],
+  "main": "package.json",
   "author": "The Closure Compiler Authors",
   "license": "Apache-2.0",
   "bugs": {

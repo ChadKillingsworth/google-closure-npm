@@ -50,7 +50,6 @@ module.exports = function (grunt) {
     },
     clean: {
       compiler: ['packages/google-closure-compiler'],
-      library: ['packages/google-closure-library'],
       templates: ['packages/google-closure-templates']
     },
     copy: {
