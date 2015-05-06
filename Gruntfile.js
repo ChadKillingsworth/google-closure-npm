@@ -66,6 +66,12 @@ module.exports = function (grunt) {
             cwd: 'closure-compiler/build',
             src: 'compiler.jar',
             dest: 'packages/google-closure-compiler/'
+          },
+          {
+            expand: true,
+            cwd: 'closure-compiler',
+            src: 'contrib/**',
+            dest: 'packages/google-closure-compiler/'
           }
         ]
       },
