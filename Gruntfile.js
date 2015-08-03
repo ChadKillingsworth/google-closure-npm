@@ -193,8 +193,8 @@ module.exports = function (grunt) {
 
   grunt.registerTask('default', ['usage']);
 
-  grunt.registerTask('compiler', ['ensure-version-specified', 'clean:compiler', 'shell:git-submodule-tags', 'shell:ant-compiler',
-      'copy:compiler', 'write-package-json:compiler']);
+  grunt.registerTask('compiler', ['ensure-version-specified', 'clean:compiler', 'shell:git-submodule-tags',
+      'shell:git-checkout-compiler-tag', 'shell:ant-compiler', 'copy:compiler', 'write-package-json:compiler']);
 
   grunt.registerTask('templates', ['ensure-version-specified', 'clean:templates', 'shell:maven-templates',
       'copy:templates', 'write-package-json:templates']);
